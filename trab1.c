@@ -3,7 +3,7 @@
 #include <string.h>
 
 char telaabertura[] = "\nPrograma que interpreta e calcula expressões matemáticas\n";
-char pedeexpressao[] = "\nEntre com a expressão matemática => ";
+char pedeexpressao[] = "\nEntre com a expressão matemática (ex: +, -, /, *) => ";
 char mostraS[] = "\nExpressão =";
 char tituloMostra[] = "\nLista de Tokens:\n";
 
@@ -12,7 +12,6 @@ char express[200];
 int poscar = 0;
 int contapar = 0;
 int listaToken = 0;
-int contapar = 0;
 int tipoToken = 0;
 
 char mostraC[] = "\nCaracter =";
@@ -43,14 +42,18 @@ void trataDivisao();
 void trataAbreParentese();
 void trataFechaParentese();
 void trataSeno();
-void trataCosseno();
-void trataTangente();
-void trataLogaritmo();
-void trataPotencia();
-void trataRaiz();
-void trataNumero();
+// void trataCosseno();
+// void trataTangente();
+// void trataLogaritmo();
+// void trataPotencia();
+// void trataRaiz();
+// void trataNumero();
 void insereLista();
 void erroPar();
+
+void generic_error(){
+  printf("Programa em desenvolvimento, ainda não temos essa função implementada\n");
+}
 
 int abertura(){
   printf("%s", telaabertura);
@@ -61,10 +64,15 @@ int abertura(){
 int le_expressao(){
   printf("%s", pedeexpressao);
   scanf(" %[^\n]", express);
-  printf("%s %s\n", mostraS, express);
+  generic_error();
+  // printf("%s %s\n", mostraS, express);
 
   return 0;
 }
+
+// waiting for development
+
+
 
 void fim(){
   exit(0);
@@ -119,38 +127,38 @@ int pegaProx(){
       trataSeno();
       break;
 
-    case 'c':
-      trataCosseno();
-      break;
+    // case 'c':
+    //   trataCosseno();
+    //   break;
 
-    case 't':
-      trataTangente();
-      break;
+    // case 't':
+    //   trataTangente();
+    //   break;
 
-    case 'l':
-      trataLogaritmo();
-      break;
+    // case 'l':
+    //   trataLogaritmo();
+    //   break;
 
-    case 'p':
-      trataPotencia();
-      break;
+    // case 'p':
+    //   trataPotencia();
+    //   break;
 
-    case 'r':
-      trataRaiz();
-      break;
+    // case 'r':
+    //   trataRaiz();
+    //   break;
 
-    case '0':
-    case '1':
-    case '2':
-    case '3':
-    case '4':
-    case '5':
-    case '6':
-    case '7':
-    case '8':
-    case '9':
-      trataNumero();
-      break;
+    // case '0':
+    // case '1':
+    // case '2':
+    // case '3':
+    // case '4':
+    // case '5':
+    // case '6':
+    // case '7':
+    // case '8':
+    // case '9':
+    //   trataNumero();
+    //   break;
     
     default:
       fim();
@@ -222,11 +230,11 @@ void erroPar(){
 }
 
 void trataSeno(){
-  
+  /* not yet implemented method */
 }
 
 void insereLista(){
-  // malloc()
+  /* not yet implemented method */
 }
 
 void cria_lista(){
@@ -243,11 +251,16 @@ void mostra_lista(){
   printf("%s", tituloMostra);
 }
 
-void checa_lista(){}
+void checa_lista(){
+    /* not yet implemented method */
+}
 
-void reduz_lista(){}
+void reduz_lista(){
+    /* not yet implemented method */
+}
 
 int main(){
+
   abertura();
   le_expressao();
   cria_lista();
