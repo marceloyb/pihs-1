@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+//Código original de Diogo e Luis Felipe
 char telaabertura[] = "\nPrograma que interpreta e calcula expressões matemáticas\n";
 char pedeexpressao[] = "\nEntre com a expressão matemática (ex: +, -, /, *) => ";
 char mostraS[] = "\nExpressão =";
@@ -260,7 +261,7 @@ void reduz_lista(){
 }
 
 int main(){
-
+  //eai hacktoberfest
   abertura();
   le_expressao();
   cria_lista();
