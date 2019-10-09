@@ -249,6 +249,7 @@ void checa_lista(){}
 void reduz_lista(){}
 
 int main(){
+  //eai hacktoberfest
   abertura();
   le_expressao();
   cria_lista();
