@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+//Código original de Diogo e Luis Felipe
 char telaabertura[] = "\nPrograma que interpreta e calcula expressões matemáticas\n";
 char pedeexpressao[] = "\nEntre com a expressão matemática => ";
 char mostraS[] = "\nExpressão =";
